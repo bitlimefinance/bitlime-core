@@ -407,7 +407,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"v2-core-master/contracts/TokenExemple.sol": "Token1"
+			"bitlime-core/contracts/TokenExemple.sol": "Token1"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -461,12 +461,12 @@
 				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
 			]
 		},
-		"v2-core-master/contracts/TokenExemple.sol": {
-			"keccak256": "0xb354fb81bfeb70afc5554ac88b9ba12118bca0958b7060244a194052e43fe800",
+		"bitlime-core/contracts/TokenExemple.sol": {
+			"keccak256": "0xecfbbf8ed05bbc881dffa93c469f6ed3d94d3c3e6619e9cb8f3643be0bbd16ee",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e35250f19406a02e26ba4a7e6e69be3169fa134dd30521893677c84327b47beb",
-				"dweb:/ipfs/QmQzFPBZ3fBjY346RecyhM8Q3udrqkr9BooBe73scFikzF"
+				"bzz-raw://1c91b2128f00101e23dffe9819efa224209ebe586ce4e3ada1959772eba4100c",
+				"dweb:/ipfs/QmWK3dstJy139e1nLnxmvwsvXKh5P5Rxoh9t1DfHT4jsN3"
 			]
 		}
 	},

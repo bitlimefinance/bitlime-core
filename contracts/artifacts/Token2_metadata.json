@@ -407,7 +407,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"v2-core-master/contracts/TokenExemple.sol": "Token2"
+			"bitlime-core/contracts/TokenExemple.sol": "Token2"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -461,7 +461,7 @@
 				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
 			]
 		},
-		"v2-core-master/contracts/TokenExemple.sol": {
+		"bitlime-core/contracts/TokenExemple.sol": {
 			"keccak256": "0xe2f3c5dd6b1c910908dba30837e936a094728281c78074f3352214789f25cc69",
 			"license": "MIT",
 			"urls": [
