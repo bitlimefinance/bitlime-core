@@ -6,6 +6,7 @@ import './BitlimeV2Pair.sol';
 contract BitlimeV2Factory is IBitlimeV2Factory {
     bytes32 public constant INIT_CODE_PAIR_HASH = keccak256(abi.encodePacked(type(BitlimeV2Pair).creationCode));
 
+    uint public fee = 25;
     address public feeTo;
     address public feeToSetter;
 
@@ -42,6 +43,12 @@ contract BitlimeV2Factory is IBitlimeV2Factory {
     function setFeeTo(address _feeTo) external {
         require(msg.sender == feeToSetter, 'BitlimeV2: FORBIDDEN');
         feeTo = _feeTo;
+    }
+
+    //function for set dex fees
+    function setFee(uint _fee) external {
+        require(msg.sender == feeToSetter, 'BitlimeV2: FORBIDDEN');
+        fee = _fee;
     }
 
     function setFeeToSetter(address _feeToSetter) external {

@@ -101,6 +101,21 @@
 			{
 				"constant": true,
 				"inputs": [],
+				"name": "fee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
 				"name": "feeTo",
 				"outputs": [
 					{
@@ -206,10 +221,10 @@
 	},
 	"sources": {
 		"bitlime-core/contracts/interfaces/IBitlimeV2Factory.sol": {
-			"keccak256": "0x7e601d475779902f04721f5d4cac52b5e590d0c9e9f087c32fe7883049e98ec9",
+			"keccak256": "0x4ee88a9d22348cdc025021d1f534e9199da6f24f6ac7558890581fb699d93854",
 			"urls": [
-				"bzz-raw://8b90b3d44478afb9e4436a91c8ebdaa6aa0e5d93f37fb0ef93ecf9a548692623",
-				"dweb:/ipfs/QmWvUCvKDbR5xy8FapPhgxpHTN6iqynomYhaEE9e6irrgq"
+				"bzz-raw://855383d22da5abc0aaa1db4f459fbd76c751e9d107652667a3cf130e17057453",
+				"dweb:/ipfs/QmY8192eyUurQv5fp3r3zDbR5npUhtXTURcUeviuc7RHoR"
 			]
 		}
 	},

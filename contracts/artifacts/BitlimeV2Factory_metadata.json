@@ -128,6 +128,21 @@
 			{
 				"constant": true,
 				"inputs": [],
+				"name": "fee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
 				"name": "feeTo",
 				"outputs": [
 					{
@@ -185,6 +200,21 @@
 				"constant": false,
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "_fee",
+						"type": "uint256"
+					}
+				],
+				"name": "setFee",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "_feeTo",
 						"type": "address"
@@ -233,24 +263,24 @@
 	},
 	"sources": {
 		"bitlime-core/contracts/BitlimeV2ERC20.sol": {
-			"keccak256": "0x57a822c5a0ce227d4b097381ecfe499b84e8defdbce7e43b76a3e0d8bcd8317a",
+			"keccak256": "0x0f15ef7af9dc6d07f550cc6ed10110a0d2cd4d7c94ef5987f633f3bcd411fe75",
 			"urls": [
-				"bzz-raw://ee2a6c16f5658408a45f1a53f8a3e8fa38867776db67c08c0efb96247db06c5d",
-				"dweb:/ipfs/QmRuHgwhDBKhnWDexDxAkdrGkQ1Q9UQ7ExPcamvYCrjpx3"
+				"bzz-raw://c8ba19cd9510728e3543e8084046eed686e7edf232c9644b73062cc3baf9d289",
+				"dweb:/ipfs/QmU1FAjkm9XHqphZMD1QTunZn3QFBoonN9EG99oTMSKzcM"
 			]
 		},
 		"bitlime-core/contracts/BitlimeV2Factory.sol": {
-			"keccak256": "0x935c6fffe90b2be36fb26ae5456437c39e478bf72418ae1da7f5de0a216e95e0",
+			"keccak256": "0xee9f3728ca66f222acc69e154512dd90faef03e487c8a772d1d4efb751539ef0",
 			"urls": [
-				"bzz-raw://be5c38a9a2c190f6dd6924afc58ab65cff3d71a4909e482cb42a0499967e1a0f",
-				"dweb:/ipfs/Qmezi4NQkBTVRs9Pzrj1rUAP5pvbGmpERhLhSsXgigqnWw"
+				"bzz-raw://5bc7b2fbaa42336be51f16560ad391b75c2415899684e2ac45da98bc78967433",
+				"dweb:/ipfs/QmUi8yGx8dx6Jicj9kWykjLCrf8SNhjpf8CXDrd7iAPkzD"
 			]
 		},
 		"bitlime-core/contracts/BitlimeV2Pair.sol": {
-			"keccak256": "0xff1750ef8d286394a4a4a86526fbfa20f4cf19246b656a5c257d6f438336c3d1",
+			"keccak256": "0x2773245e92c698bc012defe839c7ead23fe54a94b36047d002b3b8deb8e925ba",
 			"urls": [
-				"bzz-raw://f35ae934a7f669348a52dd453810158da5a337edf54b0969e93a0713f170dcca",
-				"dweb:/ipfs/Qma9rL4sP3H1g23RmijVwmA7oNRsDfdNqXCyNurrmY1sq9"
+				"bzz-raw://1f966017ff4aaa813e3beaa7604d095ddd5d5d06e2ac11a919a0db24868b3e11",
+				"dweb:/ipfs/QmdHnpmRgFUEi5rWhnQJJHn1VjTbXKiTk9V2vicsGrtsPV"
 			]
 		},
 		"bitlime-core/contracts/interfaces/IBitlimeV2Callee.sol": {
@@ -268,10 +298,10 @@
 			]
 		},
 		"bitlime-core/contracts/interfaces/IBitlimeV2Factory.sol": {
-			"keccak256": "0x7e601d475779902f04721f5d4cac52b5e590d0c9e9f087c32fe7883049e98ec9",
+			"keccak256": "0x4ee88a9d22348cdc025021d1f534e9199da6f24f6ac7558890581fb699d93854",
 			"urls": [
-				"bzz-raw://8b90b3d44478afb9e4436a91c8ebdaa6aa0e5d93f37fb0ef93ecf9a548692623",
-				"dweb:/ipfs/QmWvUCvKDbR5xy8FapPhgxpHTN6iqynomYhaEE9e6irrgq"
+				"bzz-raw://855383d22da5abc0aaa1db4f459fbd76c751e9d107652667a3cf130e17057453",
+				"dweb:/ipfs/QmY8192eyUurQv5fp3r3zDbR5npUhtXTURcUeviuc7RHoR"
 			]
 		},
 		"bitlime-core/contracts/interfaces/IBitlimeV2Pair.sol": {

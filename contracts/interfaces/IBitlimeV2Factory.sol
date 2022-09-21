@@ -3,6 +3,7 @@ pragma solidity >=0.5.0;
 interface IBitlimeV2Factory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
 
+    function fee() external view returns (uint);
     function feeTo() external view returns (address);
     function feeToSetter() external view returns (address);
 
