@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "BitlimeV2Call",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"bitlime-core/contracts/interfaces/IBitlimeV2Callee.sol": "IBitlimeV2Callee"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"bitlime-core/contracts/interfaces/IBitlimeV2Callee.sol": {
+			"keccak256": "0xb419bcf84f99302c8468ab1f33c7e2e3ef6fe5816c8adcb07ecae7f4e2a15f74",
+			"urls": [
+				"bzz-raw://1180991468b522c03368886525792abf8aca879faee90d3cd4f892378fa82a99",
+				"dweb:/ipfs/QmWac9UrLQj2HafUQ1Ltp6kH8RVjUPWynEsCBbLpmZ7cas"
+			]
+		}
+	},
+	"version": 1
+}

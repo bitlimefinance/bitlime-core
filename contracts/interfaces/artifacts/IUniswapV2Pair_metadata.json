@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.6.6+commit.6c089d02"
+		"version": "0.5.16+commit.9c3226ce"
 	},
 	"language": "Solidity",
 	"output": {
@@ -174,6 +174,7 @@
 				"type": "event"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "DOMAIN_SEPARATOR",
 				"outputs": [
@@ -183,10 +184,12 @@
 						"type": "bytes32"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "MINIMUM_LIQUIDITY",
 				"outputs": [
@@ -196,10 +199,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "PERMIT_TYPEHASH",
 				"outputs": [
@@ -209,10 +214,12 @@
 						"type": "bytes32"
 					}
 				],
+				"payable": false,
 				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -233,10 +240,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -257,10 +266,12 @@
 						"type": "bool"
 					}
 				],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -276,10 +287,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -300,10 +313,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "decimals",
 				"outputs": [
@@ -313,10 +328,12 @@
 						"type": "uint8"
 					}
 				],
+				"payable": false,
 				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "factory",
 				"outputs": [
@@ -326,10 +343,12 @@
 						"type": "address"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "getReserves",
 				"outputs": [
@@ -349,10 +368,12 @@
 						"type": "uint32"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -367,10 +388,12 @@
 				],
 				"name": "initialize",
 				"outputs": [],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "kLast",
 				"outputs": [
@@ -380,10 +403,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -399,10 +424,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "name",
 				"outputs": [
@@ -412,10 +439,12 @@
 						"type": "string"
 					}
 				],
+				"payable": false,
 				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -431,10 +460,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -474,10 +505,12 @@
 				],
 				"name": "permit",
 				"outputs": [],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "price0CumulativeLast",
 				"outputs": [
@@ -487,10 +520,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "price1CumulativeLast",
 				"outputs": [
@@ -500,10 +535,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -513,10 +550,12 @@
 				],
 				"name": "skim",
 				"outputs": [],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -541,10 +580,12 @@
 				],
 				"name": "swap",
 				"outputs": [],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "symbol",
 				"outputs": [
@@ -554,17 +595,21 @@
 						"type": "string"
 					}
 				],
+				"payable": false,
 				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [],
 				"name": "sync",
 				"outputs": [],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "token0",
 				"outputs": [
@@ -574,10 +619,12 @@
 						"type": "address"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "token1",
 				"outputs": [
@@ -587,10 +634,12 @@
 						"type": "address"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": true,
 				"inputs": [],
 				"name": "totalSupply",
 				"outputs": [
@@ -600,10 +649,12 @@
 						"type": "uint256"
 					}
 				],
+				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -624,10 +675,12 @@
 						"type": "bool"
 					}
 				],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
@@ -653,6 +706,7 @@
 						"type": "bool"
 					}
 				],
+				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -666,13 +720,10 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"v2-core-master/contracts/interfaces/IUniswapV2Pair.sol": "IUniswapV2Pair"
+			"bitlime-core/contracts/interfaces/IUniswapV2Pair.sol": "IUniswapV2Pair"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
-		"metadata": {
-			"bytecodeHash": "ipfs"
-		},
 		"optimizer": {
 			"enabled": true,
 			"runs": 200
@@ -680,7 +731,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"v2-core-master/contracts/interfaces/IUniswapV2Pair.sol": {
+		"bitlime-core/contracts/interfaces/IUniswapV2Pair.sol": {
 			"keccak256": "0x6e301cd1c669825e95796a549af46ea9214abad484a2d687c9a8f4d3953457af",
 			"urls": [
 				"bzz-raw://1de1663b461dd369ecf043124025f4ce78fe281d6e972180012423584b9bb1ed",

@@ -462,11 +462,11 @@
 			]
 		},
 		"bitlime-core/contracts/TokenExemple.sol": {
-			"keccak256": "0xe2f3c5dd6b1c910908dba30837e936a094728281c78074f3352214789f25cc69",
+			"keccak256": "0xc07b5012109233ce242ffbe953f65380460701bb7b643bf25d659e56fd3a4ec9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b10b33c66c954349a07ef7bb8b0a7da00c787430e22f2c15d3faf4ff43d4ea07",
-				"dweb:/ipfs/QmYbgg1gBjUunFTExasigEvYv4oqKh8oPuud4F2da7XDpC"
+				"bzz-raw://7f05ff2aa6cdfb70673b01e0d3287e88980ff5b5a186af76fcc1d1f81149d9fa",
+				"dweb:/ipfs/QmaBxaSgsDVR59rN3iWJ16resFdvv6RG9HfhhkGusJrrXu"
 			]
 		}
 	},
