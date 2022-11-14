@@ -6,12 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -206,7 +200,7 @@
 					}
 				],
 				"payable": false,
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
@@ -221,7 +215,7 @@
 					}
 				],
 				"payable": false,
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
@@ -229,12 +223,12 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "owner",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "spender",
 						"type": "address"
 					}
 				],
@@ -281,7 +275,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "owner",
 						"type": "address"
 					}
 				],
@@ -335,7 +329,7 @@
 					}
 				],
 				"payable": false,
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
@@ -360,17 +354,17 @@
 				"outputs": [
 					{
 						"internalType": "uint112",
-						"name": "_reserve0",
+						"name": "reserve0",
 						"type": "uint112"
 					},
 					{
 						"internalType": "uint112",
-						"name": "_reserve1",
+						"name": "reserve1",
 						"type": "uint112"
 					},
 					{
 						"internalType": "uint32",
-						"name": "_blockTimestampLast",
+						"name": "blockTimestampLast",
 						"type": "uint32"
 					}
 				],
@@ -383,12 +377,12 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_token0",
+						"name": "",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "_token1",
+						"name": "",
 						"type": "address"
 					}
 				],
@@ -446,7 +440,7 @@
 					}
 				],
 				"payable": false,
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
@@ -454,7 +448,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "owner",
 						"type": "address"
 					}
 				],
@@ -602,7 +596,7 @@
 					}
 				],
 				"payable": false,
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
@@ -726,7 +720,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"bitlime-core/contracts/BitlimeV2Pair_flat.sol": "BitlimeV2Pair"
+			"bitlime-core/contracts/BitlimeV2Pair_flat.sol": "IBitlimeV2Pair"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},

@@ -1,0 +1,37 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"bitlime-core/contracts/BitlimeV2Pair_flat.sol": "SafeMath"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"bitlime-core/contracts/BitlimeV2Pair_flat.sol": {
+			"keccak256": "0xbc5e4c04b4b2cc66da826e5ac238c5f9aedb381ac95fa9091db1bd6875bd7479",
+			"urls": [
+				"bzz-raw://694bae3a7096256aa8d9510386c4a8ba5f0ec3a20b611076cad26b33a11820c9",
+				"dweb:/ipfs/QmPStjfpFC3abAULPrFjqH5167fjx88gUn3tdkQD7GyDqJ"
+			]
+		}
+	},
+	"version": 1
+}

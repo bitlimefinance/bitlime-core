@@ -6,18 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_feeToSetter",
-						"type": "address"
-					}
-				],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -50,21 +38,6 @@
 			},
 			{
 				"constant": true,
-				"inputs": [],
-				"name": "INIT_CODE_PAIR_HASH",
-				"outputs": [
-					{
-						"internalType": "bytes32",
-						"name": "",
-						"type": "bytes32"
-					}
-				],
-				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": true,
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -76,7 +49,7 @@
 				"outputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "pair",
 						"type": "address"
 					}
 				],
@@ -175,12 +148,12 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "tokenA",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "tokenB",
 						"type": "address"
 					}
 				],
@@ -188,7 +161,7 @@
 				"outputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "pair",
 						"type": "address"
 					}
 				],
@@ -200,23 +173,8 @@
 				"constant": false,
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_fee",
-						"type": "uint256"
-					}
-				],
-				"name": "setFee",
-				"outputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"constant": false,
-				"inputs": [
-					{
 						"internalType": "address",
-						"name": "_feeTo",
+						"name": "",
 						"type": "address"
 					}
 				],
@@ -231,7 +189,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_feeToSetter",
+						"name": "",
 						"type": "address"
 					}
 				],
@@ -251,7 +209,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"bitlime-core/contracts/BitlimeV2Factory_flat.sol": "BitlimeV2Factory"
+			"bitlime-core/contracts/BitlimeV2Pair_flat.sol": "IBitlimeV2Factory"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -262,11 +220,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"bitlime-core/contracts/BitlimeV2Factory_flat.sol": {
-			"keccak256": "0xffbacaddc7cf0dc90dfcffdaedb0132ec043084b21fbb2d5dd3e5ce688d8d602",
+		"bitlime-core/contracts/BitlimeV2Pair_flat.sol": {
+			"keccak256": "0xbc5e4c04b4b2cc66da826e5ac238c5f9aedb381ac95fa9091db1bd6875bd7479",
 			"urls": [
-				"bzz-raw://2081a03f3234ec159bd592d61d06acd427fac0c150b0478ee5fc4d803adc702d",
-				"dweb:/ipfs/QmRLXPmiHLw8nJL4NUCkTv87kxU1C9TzYYvRroxJHyZFK3"
+				"bzz-raw://694bae3a7096256aa8d9510386c4a8ba5f0ec3a20b611076cad26b33a11820c9",
+				"dweb:/ipfs/QmPStjfpFC3abAULPrFjqH5167fjx88gUn3tdkQD7GyDqJ"
 			]
 		}
 	},

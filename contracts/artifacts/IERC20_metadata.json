@@ -6,16 +6,29 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": true,
 						"internalType": "address",
-						"name": "_feeToSetter",
+						"name": "owner",
 						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
 					}
 				],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"name": "Approval",
+				"type": "event"
 			},
 			{
 				"anonymous": false,
@@ -23,102 +36,71 @@
 					{
 						"indexed": true,
 						"internalType": "address",
-						"name": "token0",
+						"name": "from",
 						"type": "address"
 					},
 					{
 						"indexed": true,
 						"internalType": "address",
-						"name": "token1",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "pair",
+						"name": "to",
 						"type": "address"
 					},
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "",
+						"name": "value",
 						"type": "uint256"
 					}
 				],
-				"name": "PairCreated",
+				"name": "Transfer",
 				"type": "event"
 			},
 			{
 				"constant": true,
-				"inputs": [],
-				"name": "INIT_CODE_PAIR_HASH",
-				"outputs": [
-					{
-						"internalType": "bytes32",
-						"name": "",
-						"type": "bytes32"
-					}
-				],
-				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": true,
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "allPairs",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": true,
-				"inputs": [],
-				"name": "allPairsLength",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "tokenA",
+						"name": "owner",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "tokenB",
+						"name": "spender",
 						"type": "address"
 					}
 				],
-				"name": "createPair",
+				"name": "allowance",
 				"outputs": [
 					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
 						"internalType": "address",
-						"name": "pair",
+						"name": "spender",
 						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"payable": false,
@@ -127,8 +109,14 @@
 			},
 			{
 				"constant": true,
-				"inputs": [],
-				"name": "fee",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -143,12 +131,12 @@
 			{
 				"constant": true,
 				"inputs": [],
-				"name": "feeTo",
+				"name": "decimals",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "uint8",
 						"name": "",
-						"type": "address"
+						"type": "uint8"
 					}
 				],
 				"payable": false,
@@ -158,12 +146,12 @@
 			{
 				"constant": true,
 				"inputs": [],
-				"name": "feeToSetter",
+				"name": "name",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "string",
 						"name": "",
-						"type": "address"
+						"type": "string"
 					}
 				],
 				"payable": false,
@@ -172,71 +160,87 @@
 			},
 			{
 				"constant": true,
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
 						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "to",
 						"type": "address"
-					}
-				],
-				"name": "getPair",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": false,
-				"inputs": [
+					},
 					{
 						"internalType": "uint256",
-						"name": "_fee",
+						"name": "value",
 						"type": "uint256"
 					}
 				],
-				"name": "setFee",
-				"outputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"constant": false,
-				"inputs": [
+				"name": "transferFrom",
+				"outputs": [
 					{
-						"internalType": "address",
-						"name": "_feeTo",
-						"type": "address"
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
-				"name": "setFeeTo",
-				"outputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"constant": false,
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_feeToSetter",
-						"type": "address"
-					}
-				],
-				"name": "setFeeToSetter",
-				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -251,7 +255,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"bitlime-core/contracts/BitlimeV2Factory_flat.sol": "BitlimeV2Factory"
+			"bitlime-core/contracts/BitlimeV2Pair_flat.sol": "IERC20"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -262,11 +266,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"bitlime-core/contracts/BitlimeV2Factory_flat.sol": {
-			"keccak256": "0xffbacaddc7cf0dc90dfcffdaedb0132ec043084b21fbb2d5dd3e5ce688d8d602",
+		"bitlime-core/contracts/BitlimeV2Pair_flat.sol": {
+			"keccak256": "0xbc5e4c04b4b2cc66da826e5ac238c5f9aedb381ac95fa9091db1bd6875bd7479",
 			"urls": [
-				"bzz-raw://2081a03f3234ec159bd592d61d06acd427fac0c150b0478ee5fc4d803adc702d",
-				"dweb:/ipfs/QmRLXPmiHLw8nJL4NUCkTv87kxU1C9TzYYvRroxJHyZFK3"
+				"bzz-raw://694bae3a7096256aa8d9510386c4a8ba5f0ec3a20b611076cad26b33a11820c9",
+				"dweb:/ipfs/QmPStjfpFC3abAULPrFjqH5167fjx88gUn3tdkQD7GyDqJ"
 			]
 		}
 	},
