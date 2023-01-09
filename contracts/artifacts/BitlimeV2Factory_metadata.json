@@ -11,6 +11,11 @@
 						"internalType": "address",
 						"name": "_feeToSetter",
 						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_Lime",
+						"type": "address"
 					}
 				],
 				"payable": false,
@@ -65,6 +70,21 @@
 			},
 			{
 				"constant": true,
+				"inputs": [],
+				"name": "Lime",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -93,6 +113,21 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "allowAlienPools",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"payable": false,
@@ -200,6 +235,21 @@
 				"constant": false,
 				"inputs": [
 					{
+						"internalType": "bool",
+						"name": "_allowAlienPools",
+						"type": "bool"
+					}
+				],
+				"name": "setAlienPools",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "_fee",
 						"type": "uint256"
@@ -251,22 +301,92 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"bitlime-core/contracts/BitlimeV2Factory_flat.sol": "BitlimeV2Factory"
+			"bitlime-core/contracts/BitlimeV2Factory.sol": "BitlimeV2Factory"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
 		"optimizer": {
-			"enabled": true,
+			"enabled": false,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
-		"bitlime-core/contracts/BitlimeV2Factory_flat.sol": {
-			"keccak256": "0xffbacaddc7cf0dc90dfcffdaedb0132ec043084b21fbb2d5dd3e5ce688d8d602",
+		"bitlime-core/contracts/BitlimeV2ERC20.sol": {
+			"keccak256": "0x0f15ef7af9dc6d07f550cc6ed10110a0d2cd4d7c94ef5987f633f3bcd411fe75",
 			"urls": [
-				"bzz-raw://2081a03f3234ec159bd592d61d06acd427fac0c150b0478ee5fc4d803adc702d",
-				"dweb:/ipfs/QmRLXPmiHLw8nJL4NUCkTv87kxU1C9TzYYvRroxJHyZFK3"
+				"bzz-raw://c8ba19cd9510728e3543e8084046eed686e7edf232c9644b73062cc3baf9d289",
+				"dweb:/ipfs/QmU1FAjkm9XHqphZMD1QTunZn3QFBoonN9EG99oTMSKzcM"
+			]
+		},
+		"bitlime-core/contracts/BitlimeV2Factory.sol": {
+			"keccak256": "0x3fd5ae3435c6842d8faae6d96b4c1b18f1fcde8fe0e94f6c251f029335427f72",
+			"urls": [
+				"bzz-raw://55824d18e2d4687e185d39c9e8c48dae7261b62923fefdddcca1e4f26f56c257",
+				"dweb:/ipfs/QmbwHkpV31PN6JCwxG6QM9dBLG8pbN4Fzt3NZZ3yhh5Dak"
+			]
+		},
+		"bitlime-core/contracts/BitlimeV2Pair.sol": {
+			"keccak256": "0x2773245e92c698bc012defe839c7ead23fe54a94b36047d002b3b8deb8e925ba",
+			"urls": [
+				"bzz-raw://1f966017ff4aaa813e3beaa7604d095ddd5d5d06e2ac11a919a0db24868b3e11",
+				"dweb:/ipfs/QmdHnpmRgFUEi5rWhnQJJHn1VjTbXKiTk9V2vicsGrtsPV"
+			]
+		},
+		"bitlime-core/contracts/interfaces/IBitlimeV2Callee.sol": {
+			"keccak256": "0xb419bcf84f99302c8468ab1f33c7e2e3ef6fe5816c8adcb07ecae7f4e2a15f74",
+			"urls": [
+				"bzz-raw://1180991468b522c03368886525792abf8aca879faee90d3cd4f892378fa82a99",
+				"dweb:/ipfs/QmWac9UrLQj2HafUQ1Ltp6kH8RVjUPWynEsCBbLpmZ7cas"
+			]
+		},
+		"bitlime-core/contracts/interfaces/IBitlimeV2ERC20.sol": {
+			"keccak256": "0x66e9fcbad5f9f3be69d81758d6d70cfd3e48160d7d8cda07dc7fa7fddf8ea33d",
+			"urls": [
+				"bzz-raw://8667a6cd585e7ad8b93d65ecd98af611c91553810cbc2f076f7277c551f541a3",
+				"dweb:/ipfs/QmVoZ9vhPLPtgzkf1L6Nh8jP7iFxARxjdeqmKMcfyaCgAV"
+			]
+		},
+		"bitlime-core/contracts/interfaces/IBitlimeV2Factory.sol": {
+			"keccak256": "0x4ee88a9d22348cdc025021d1f534e9199da6f24f6ac7558890581fb699d93854",
+			"urls": [
+				"bzz-raw://855383d22da5abc0aaa1db4f459fbd76c751e9d107652667a3cf130e17057453",
+				"dweb:/ipfs/QmY8192eyUurQv5fp3r3zDbR5npUhtXTURcUeviuc7RHoR"
+			]
+		},
+		"bitlime-core/contracts/interfaces/IBitlimeV2Pair.sol": {
+			"keccak256": "0x80f522ff5703aaacd7e4ec31e3ec553b204a7842153e4cbb1fbd041a96f5978e",
+			"urls": [
+				"bzz-raw://6200880bd75599b1196c4dfdcd9602535b6e560e3b9095af049ef50daac8c48a",
+				"dweb:/ipfs/QmXqZN8thd6q3NyWSjbfHbGYu5Y6ZSG3BqRk5E9rbBqqTa"
+			]
+		},
+		"bitlime-core/contracts/interfaces/IERC20.sol": {
+			"keccak256": "0xa791b279660ee5eb66ebd4f23b539055d178ae24677f3a164567441ecfdcf73a",
+			"urls": [
+				"bzz-raw://06f36f585a8b82eb388ccccc4e8c483718a99a07f5f12d3217afc254ab139a68",
+				"dweb:/ipfs/Qmedr3aAH6F3ZTgZJ3enoP92ZD8yNwiCStwtGknNXhiK8v"
+			]
+		},
+		"bitlime-core/contracts/libraries/Math.sol": {
+			"keccak256": "0x59371bbb24653eabdec42dd004bc94c70536bd655b007b3175c89561597b258b",
+			"urls": [
+				"bzz-raw://a17afc98200f4dacc7a1b15adcdc6515abfbf42d78354d530e9df5966c301976",
+				"dweb:/ipfs/QmeNz4PfMKN2nAmNxSBqVrWw6g1b3EpRa4ZuDpHq7kafh7"
+			]
+		},
+		"bitlime-core/contracts/libraries/SafeMath.sol": {
+			"keccak256": "0xb35283807a3600a1df7abff9d82a7f8b563711333cb769bb473ed7c9c5b80cb3",
+			"urls": [
+				"bzz-raw://76578c35c07b8447d0ab87d34b71a2c2ca6995b5888ab9f6127e822e3d3e6e8e",
+				"dweb:/ipfs/QmVPaXWUbsXtVZoGaFg1DtcrRP9axX8XWJFy5jfJ9Mknkb"
+			]
+		},
+		"bitlime-core/contracts/libraries/UQ112x112.sol": {
+			"keccak256": "0xe3bebc29aac628026f0eb6d0dd10d463b0b796fadfa0a1cfad1ae603c7d56539",
+			"urls": [
+				"bzz-raw://64b8a2f0b01eb74df50a00182874db88b10104deb8aa51f9125ac138cf394b89",
+				"dweb:/ipfs/QmUYuj73nr6hxK5xmHdsq7wQjHuLC9iH6c89pcn9pDPhLF"
 			]
 		}
 	},
